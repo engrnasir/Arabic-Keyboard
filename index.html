@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Virtual Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <textarea name="" id="result" cols="30" rows="7" lang="ar"></textarea>
+    </div>
+    <div class="keyboard">
+        <div class="row controls">
+            <button onclick="headercontrols('copy')">copier</button>
+            <button onclick="headercontrols('clear')">clear all</button>
+            <button onclick="headercontrols('space')">escape</button>
+            <button onclick="headercontrols('small')">petit cadre</button>
+            <button onclick="headercontrols('large')">grand cadre</button>
+        </div>
+        <div class="row">
+          <div class="key-wrapper" onclick="buttonHandler('ش')">s'<div class="key"><input type="button" value="ش"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('س')">s<div class="key"><input type="button" value="س"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ز')">z<div class="key"><input type="button" value="ز"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ر')">r<div class="key"><input type="button" value="ر"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ذ')">d'<div class="key"><input type="button" value="ذ"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('د')">d<div class="key"><input type="button" value="د"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('خ')">H'<div class="key"><input type="button" value="خ"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ح')">H<div class="key"><input type="button" value="ح"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ج')">j<div class="key"><input type="button" value="ج"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ث')">t'<div class="key"><input type="button" value="ث"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ت')">t<div class="key"><input type="button" value="ت"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ب')">b<div class="key"><input type="button" value="ب"></div> </div>
+          <div class="key-wrapper" onclick="buttonHandler('ا')">a<div class="key"><input type="button" value="ا"></div> </div>
+        </div>
+        <div class="row">            
+          <div class="key-wrapper" onclick="buttonHandler('ء')">-<div class="key"><input type="button" value="ء"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ي')">y<div class="key"><input type="button" value="ي"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('و')">w<div class="key"><input type="button" value="و"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ن')">h<div class="key"><input type="button" value="ن"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('م')">n<div class="key"><input type="button" value="م"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ه')">m<div class="key"><input type="button" value="ه"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ل')">l<div class="key"><input type="button" value="ل"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ك')">k<div class="key"><input type="button" value="ك"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ق')">q<div class="key"><input type="button" value="ق"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ف')">f<div class="key"><input type="button" value="ف"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('غ')">g'<div class="key"><input type="button" value="غ"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ع')">g<div class="key"><input type="button" value="ع"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ظ')">Z<div class="key"><input type="button" value="ظ"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ط')">T<div class="key"><input type="button" value="ط"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ض')">D<div class="key"><input type="button" value="ض"></div></div>
+          <div class="key-wrapper" onclick="buttonHandler('ص')">S<div class="key"><input type="button" value="ص"></div></div>
+        </div>
+        <div class="row">
+          <div class="key" onclick="buttonHandler('ى')"><input type="button" value="ى"></div> 
+          <div class="key" onclick="buttonHandler('ئ')"><input type="button" value="ئ"></div> 
+          <div class="key" onclick="buttonHandler('ؤ')"><input type="button" value="ؤ"></div> 
+          <div class="key" onclick="buttonHandler('ة')"><input type="button" value="ة"></div> 
+          <div class="key" onclick="buttonHandler('إ')"><input type="button" value="إ"></div> 
+          <div class="key" onclick="buttonHandler('أ')"><input type="button" value="أ"></div> 
+          <div class="key" onclick="buttonHandler('ٱ')"><input type="button" value="ٱ"></div> 
+          <div class="key" onclick="buttonHandler('آ')"><input type="button" value="آ"></div> 
+          <div class="key" onclick="buttonHandler(' َ')"><input type="button" value=" َ"></div> 
+          <div class="key" onclick="buttonHandler(' ً')"><input type="button" value=" ً"></div> 
+          <div class="key" onclick="buttonHandler(' ُ')"><input type="button" value=" ُ"></div> 
+          <div class="key" onclick="buttonHandler(' ٌ')"><input type="button" value=" ٌ"></div> 
+          <div class="key" onclick="buttonHandler(' ّ')"><input type="button" value=" ّ"></div> 
+          <div class="key" onclick="buttonHandler(' ْ')"><input type="button" value=" ْ"></div> 
+          <div class="key" onclick="buttonHandler(' ِ')"><input type="button" value=" ِ"></div> 
+          <div class="key" onclick="buttonHandler(' ٍ')"><input type="button" value=" ٍ"></div> 
+          <div class="ecp"></div>
+          <div class="key" onclick="buttonHandler(' ٰ')"><input type="button" value=" ٰ"></div> 
+          <div class="key" onclick="buttonHandler('ٖ ')"><input type="button" value="ٖ "></div> 
+          <div class="key" onclick="buttonHandler('ٗ ')"><input type="button" value="ٗ "></div> 
+        </div>
+        <div class="row">
+          <div class="key" onclick="buttonHandler('؟')"><input type="button" value="؟"></div> 
+          <div class="key" onclick="buttonHandler('!')"><input type="button" value="!"></div> 
+          <div class="key" onclick="buttonHandler('؛')"><input type="button" value="؛"></div> 
+          <div class="key" onclick="buttonHandler('،')"><input type="button" value="،"></div> 
+          <div class="key" onclick="buttonHandler('.')"><input type="button" value="."></div> 
+          <div class="key" onclick="buttonHandler('_')"><input type="button" value="_"></div> 
+        </div>
+        <div class="row">
+            <div class="key-wrapper" onclick="buttonHandler('٠')">0<div class="key"><input type="button" value="٠"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('١')">1<div class="key"><input type="button" value="١"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٢')">2<div class="key"><input type="button" value="٢"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٣')">3<div class="key"><input type="button" value="٣"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٤')">4<div class="key"><input type="button" value="٤"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٥')">5<div class="key"><input type="button" value="٥"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٦')">6<div class="key"><input type="button" value="٦"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٧')">7<div class="key"><input type="button" value="٧"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٨')">8<div class="key"><input type="button" value="٨"></div></div>
+            <div class="key-wrapper" onclick="buttonHandler('٩')">9<div class="key"><input type="button" value="٩"></div></div>
+            <div class="key"><input type="button" onclick="buttonHandler('٬')" value="٬"></div>
+            <div class="key"><input type="button" onclick="buttonHandler('٫')" value="٫"></div>
+            <div class="key"><input type="button" onclick="buttonHandler('٪')" value="٪"></div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
