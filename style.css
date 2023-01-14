@@ -38,6 +38,11 @@ button{
     margin-left: 30px;
     cursor: pointer;
 }
+.space{
+    max-width: 600px;
+    width: 80%;
+    margin: 5px;
+}
 .key-wrapper{
     display: flex;
     flex-direction: column;

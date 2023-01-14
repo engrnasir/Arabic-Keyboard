@@ -15,7 +15,6 @@
         <div class="row controls">
             <button onclick="headercontrols('copy')">copier</button>
             <button onclick="headercontrols('clear')">tout effacer</button>
-            <button onclick="headercontrols('space')">espace</button>
             <button onclick="headercontrols('small')">petit cadre</button>
             <button onclick="headercontrols('large')">grand cadre</button>
         </div>
@@ -82,6 +81,7 @@
           <div class="key" onclick="buttonHandler('.')"><input type="button" value="."></div> 
           <div class="key" onclick="buttonHandler('ـ')"><input type="button" value="ـ"></div> 
         </div>
+       
         <div class="row">
             <div class="key-wrapper" onclick="buttonHandler('٠')">0<div class="key"><input type="button" value="٠"></div></div>
             <div class="key-wrapper" onclick="buttonHandler('١')">1<div class="key"><input type="button" value="١"></div></div>
@@ -96,6 +96,9 @@
             <div class="key"><input type="button" onclick="buttonHandler('٬')" value="٬"></div>
             <div class="key"><input type="button" onclick="buttonHandler('٫')" value="٫"></div>
             <div class="key"><input type="button" onclick="buttonHandler('٪')" value="٪"></div>
+        </div>
+        <div class="row">
+            <button onclick="headercontrols('space')" class="space">espace</button>
         </div>
     </div>
 
